@@ -1,0 +1,17 @@
+{
+  "name": "fb-functions",
+  "lockfileVersion": 3,
+  "requires": true,
+  "version": "1.0.0",
+  "scripts": {
+    "hosting": "cd public && flutter build web && firebase deploy --only hosting",
+    "functions": "firebase deploy --only firestore:indexes && firebase deploy --only functions",
+    "start": "npm run clean && npm run build && npm run serve",
+    "clean": "rimraf dist",
+    "build": "webpack --mode production",
+    "serve": "node server.js",
+    "test": "jest",
+    "lint": "eslint .",
+    "dev": "npm run clean && npm run build && npm run test && npm run serve"
+  }
+}
