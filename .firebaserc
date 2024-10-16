@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "shift-management-app-12ef1",
+    "app-push-staging": "app-push-a2f28"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
